@@ -1,11 +1,4 @@
 {
-  "name": "laravel",
-  "version": "0.0.1",
-  "description": "Aplikasi pengambilan data quesioner secara mobile",
-  "productName": "Aplikasi Quesioner",
-  "cordovaId": "org.cordova.ques.ap",
-  "capacitorId": "",
-  "author": "Jiho <jiehoes@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "npm run development",
@@ -16,7 +9,7 @@
     "prod": "npm run production",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "lint": "eslint --fix --ext .js,.vue resources/js"
-    },
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.6",
     "@fortawesome/free-brands-svg-icons": "^5.4.1",
@@ -40,7 +33,7 @@
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1",
     "vuex-router-sync": "^5.0.0"
-    },
+  },
   "devDependencies": {
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.4.4",
