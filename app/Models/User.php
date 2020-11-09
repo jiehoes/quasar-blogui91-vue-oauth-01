@@ -2,18 +2,17 @@
 
 namespace App\Models;
 
-use App\Notifications\ResetPassword;
-use App\Notifications\VerifyEmail;
+// use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Notifications\Notifiable;
+use App\Notifications\ResetPassword;
+use App\Notifications\VerifyEmail;
 use Tymon\JWTAuth\Contracts\JWTSubject;
 
 class User extends Authenticatable implements JWTSubject //, MustVerifyEmail
 {
-    use Notifiable,
-        HasFactory;
+    use HasFactory, Notifiable;
 
     /**
      * The attributes that are mass assignable.
